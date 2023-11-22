@@ -15,4 +15,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Quote Generator"
 include(":app")
+include(":app")
+include(":app")
  
