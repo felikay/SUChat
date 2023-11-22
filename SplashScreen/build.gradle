@@ -1,0 +1,18 @@
+buildscript {
+    ext.kotlin_version = '1.8.0' // Define Kotlin version here
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // Add other classpath dependencies if needed
+    }
+}
+
+plugins {
+    id 'com.android.application' version '8.1.1' apply false
+    id 'com.android.library' version '8.1.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.6.21' apply false
+}
+
+// Define your clean task or any other task after buildscript and plugins
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
